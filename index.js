@@ -27,7 +27,7 @@ else {
      let itemArr = [];
        if (i !== cart.length-1){
          itemArr.push(`${Object.keys(cart[i])} at $${cart[i][Object.keys(cart[i])]}`);
-       console.log(`In your cart, you have ${Object.keys(cart[0])} at $${cart[0][Object.keys(cart[0])]}, ${Object.keys(cart[1])} at $${cart[1][Object.keys(cart[1])], ${Object.keys(cart[i])} at $${cart[i][Object.keys(cart[i])]}.`)
+       console.log(`In your cart, you have ${itemArr.join(', ').`)
        
       
       
