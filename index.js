@@ -49,7 +49,7 @@ function removeFromCart(item) {
  
   if (false){console.log('That item is not in your cart.')} 
   
-  // write your code here
+return cart;
 }
 
 function placeOrder(cardNumber) {
