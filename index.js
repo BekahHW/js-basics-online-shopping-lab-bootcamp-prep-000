@@ -20,15 +20,21 @@ if (cart.length === 0){console.log('Your shopping cart is empty.')}
 
 else if (cart.length === 1){console.log(`In your cart, you have ${Object.keys(cart[0])} at $${cart[0][Object.keys(cart[0])]}.`)}
 
-else if (cart.length===2){console.log(`In your cart, you have ${Object.keys(cart[0])} at $${cart[0][Object.keys(cart[0])]} and ${Object.keys(cart[1])} at $${cart[1][Object.keys(cart[1])]}.`)}
+// else if (cart.length===2){console.log(`In your cart, you have ${Object.keys(cart[0])} at $${cart[0][Object.keys(cart[0])]} and ${Object.keys(cart[1])} at $${cart[1][Object.keys(cart[1])]}.`)}
 
 else {
+  // Create empty string var to house items and prices
   let itemStr = '';
+  
+  //Loop over items in cart
      for (let i = 0; i < cart.length ; i++){
        
-     
+      // For each item add the string "item at $amt" separated by a comma and space
+      // The last item gets a period instead of a comma
+      // The second to last item has an "and" added
       itemStr = itemStr + `${Object.keys(cart[i])} at $${cart[i][Object.keys(cart[i])]}${i < cart.length - 1 ? ', ': '.'}${i === cart.length - 2 ? 'and ': ''}`;
      }
+     // Log the sting below with the item string added.
        console.log(`In your cart, you have ${itemStr}`);
 }
 }
