@@ -27,11 +27,12 @@ else {
      let itemArr = [];
        if (i !== cart.length-1){
          itemArr.push(`${Object.keys(cart[i])} at $${cart[i][Object.keys(cart[i])]}`);
-       console.log(`In your cart, you have ${itemArr.join(', ')}.`)
+       console.log(`In your cart, you have ${itemArr.join(', ')}.`);
        
       
       
 
+}
 }
 }
 }
@@ -74,5 +75,3 @@ function placeOrder(cardNumber) {
   else{
   console.log(`Your total cost is $${total()}, which will be charged to the card ${cardNumber}.`)}
    cart= []}
-
-
