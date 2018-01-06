@@ -29,7 +29,7 @@ else {
      
       itemStr = itemStr + `${i === cart.length - 1 && 'and '}${Object.keys(cart[i])} at $${cart[i][Object.keys(cart[i])]}${i < cart.length - 1 ? ', ': '.'}`;
      }
-       console.log(`In your cart, you have ${itemArr.join(', ')}.`);
+       console.log(`In your cart, you have ${itemStr}`);
 }
 }
 
