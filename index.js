@@ -47,7 +47,7 @@ function removeFromCart(item) {
   {console.log(cart)}
   
  
-  else {console.log('That item is not in your cart.')} 
+  if (false){console.log('That item is not in your cart.')} 
   
   // write your code here
 }
