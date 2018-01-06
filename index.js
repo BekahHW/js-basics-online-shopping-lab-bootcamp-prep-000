@@ -42,7 +42,7 @@ function total() {
 function removeFromCart(item) {
     for (var i = 0; i<cart.length; i++)
     
-  if (item === 0){console.log('That item is not in your cart.')} else{console.log(delete cart[i].item)}
+  if (!item){console.log('That item is not in your cart.')} else{console.log(delete cart[i].item)}
   
   return cart
   
