@@ -44,8 +44,9 @@ function removeFromCart(item) {
     
   if (cart[i].hasOwnProperty);
   cart = cart[i].slice(i+1);
+  {console.log(cart)}
   
-  return 
+ 
   else {console.log('That item is not in your cart.')} 
   
   // write your code here
