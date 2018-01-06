@@ -27,9 +27,9 @@ else {
      for (let i = 0; i < cart.length ; i++){
        
      
-      itemStr = itemStr + `${Object.keys(cart[i])} at $${cart[i][Object.keys(cart[i])]}${i < cart.length - 1 ? ', ': '.'}${i === cart.length - 2 && 'and '}`;
+      itemStr = itemStr + `${Object.keys(cart[i])} at $${cart[i][Object.keys(cart[i])]}${i < cart.length - 1 ? ', ': '.'}${i === cart.length - 2 ? 'and ': ''}`;
      }
-       alert(`In your cart, you have ${itemStr}`);
+       console.log(`In your cart, you have ${itemStr}`);
 }
 }
 
